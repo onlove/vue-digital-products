@@ -16,7 +16,7 @@
     </div>
     <div class="app-content">
       <keep-alive>
-          <router-view></router-view>
+        <router-view></router-view>
       </keep-alive>
     </div>
     <div class="app-foot">
@@ -26,9 +26,9 @@
 </template>
 
 <script>
-export default {
-  name: 'app'
-}
+  export default {
+    name: 'app'
+  }
 </script>
 
 <style>
