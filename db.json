@@ -21,10 +21,7 @@
       "url": "http://hearstone.com"
     }
   ],
-  "login": {
-    "username": "yudongdong",
-    "userId": 123123
-  },
+  "login": {},
   "getPrice": {
     "amount": 678
   },
