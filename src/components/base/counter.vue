@@ -35,8 +35,7 @@ export default {
       let fix
       if (typeof this.number === 'string') {
         fix = Number(this.number.replace(/\D/g, ''))
-      }
-      else {
+      } else {
         fix = this.number
       }
       if (fix > this.max || fix < this.min) {

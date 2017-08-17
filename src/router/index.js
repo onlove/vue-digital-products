@@ -6,6 +6,7 @@ import DetailAnaPage from '@/page/detail/analysis'
 import DetailCouPage from '@/page/detail/count'
 import DetailForPage from '@/page/detail/forecast'
 import DetailPubPage from '@/page/detail/publish'
+import OrderList from '@/page/orderList'
 Vue.use(Router)
 
 export default new Router({
@@ -37,6 +38,10 @@ export default new Router({
           component: DetailPubPage
         }
       ]
+    },
+    {
+      path: '/orderList',
+      component: OrderList
     }
   ]
 })

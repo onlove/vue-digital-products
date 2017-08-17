@@ -10,7 +10,7 @@
                   购买数量：
               </div>
               <div class="sales-board-line-right">
-
+                <v-counter :max="100" :min="20"></v-counter>
               </div>
           </div>
           <div class="sales-board-line">
@@ -18,6 +18,7 @@
                   媒介：
               </div>
               <div class="sales-board-line-right">
+                <v-mul-chooser :selections="versionList"></v-mul-chooser>
               </div>
           </div>
           <div class="sales-board-line">
@@ -57,8 +58,35 @@
 </template>
 
 <script>
+import VMulChooser from '@/components/base/multiplyChooser.vue'
+import VCounter from '@/components/base/counter.vue'
 export default {
-
+  components: {
+    VMulChooser,
+    VCounter
+  },
+  data () {
+    return {
+      versionList: [
+        {
+          label: '纸质报告',
+          value: 0
+        },
+        {
+          label: 'pdf',
+          value: 1
+        },
+        {
+          label: '页面报告',
+          value: 2
+        },
+        {
+          label: '邮件',
+          value: 3
+        }
+      ]
+    }
+  }
 }
 </script>
 

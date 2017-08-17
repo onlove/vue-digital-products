@@ -1,12 +1,12 @@
 <template>
     <div class="selection-component">
       <div class="selection-show" @click="toggleDrop">
-        <span>{{ selections[nowIndex].label }}</span>
+        <span>{{selections[nowIndex].label}}</span>
         <div class="arrow"></div>
       </div>
-      <div class="selection-list" v-if="isDrop">
+      <div class="selection-list" v-show="isDrop">
         <ul>
-          <li v-for="(item, index) in selections" @click="chooseSelection(index)">{{ item.label }}</li>
+          <li v-for="(item, index) in selections" @click="chooseSelection(index)">{{item.label}}</li>
         </ul>
       </div>
     </div>

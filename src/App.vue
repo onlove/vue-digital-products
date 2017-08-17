@@ -40,7 +40,7 @@
 </template>
 
 <script>
-import Dialog from '@/components/dialog.vue'
+import Dialog from '@/components/base/dialog.vue'
 import LogForm from '@/components/logForm.vue'
 import RegForm from '@/components/regForm.vue'
 export default {
